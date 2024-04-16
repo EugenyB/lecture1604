@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Student</title>
+</head>
+<body>
+    <h1>Hello <span th:text="${student.name}"></span></h1>
+    <h2 th:text="|Age = ${student.age}|"></h2>
+    <h2 th:text="|Rating = ${student.rating}|"></h2>
+    <h3 th:if="${student.rating > 90}">You are cool!</h3>
+</body>
+</html>

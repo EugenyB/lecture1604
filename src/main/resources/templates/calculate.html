@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate</title>
+</head>
+<body>
+    <h1>Tabulation</h1>
+    <h2 th:text="|[${tab.start}, ${tab.end}]  step=${tab.step}|"></h2>
+    <h2 th:text="|Number of steps = ${tab.steps}|"></h2>
+</body>
+</html>
